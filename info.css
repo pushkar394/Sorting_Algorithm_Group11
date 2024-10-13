@@ -1,0 +1,96 @@
+
+/* Styling for the information section */
+#info-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+    padding: 25px;
+    width: 90%;
+    background-color: #e9f5ff;  /* Light sky blue background */
+    border: 1px solid #b3daff;  /* Soft blue border */
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    flex-wrap: wrap;  /* Allow wrapping on smaller screens */
+}
+
+#info-section:hover {
+    background-color: #d0ebff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Box for displaying the code */
+#code-box, #image-box {
+    width: 45%;
+    padding: 20px;
+    background-color: #f0faff;  /* Lighter blue background */
+    border: 1px solid #7fcaff;  /* Brighter blue border */
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin: 10px 0;  /* Space between items */
+}
+
+#code-box:hover, #image-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the code box content */
+#code-box pre {
+    background-color: #1e1f29;  /* Darker gray background for code */
+    color: #f2f4f7;  /* Lighter text for code */
+    padding: 18px;
+    border-radius: 6px;
+    font-family: 'Fira Code', monospace;  /* Sleek monospace font */
+    overflow-x: auto;
+    font-size: 0.95rem;
+}
+
+#code-box code {
+    color: #f78c6c;  /* Warm orange for highlighted code */
+}
+
+/* Styling for the image */
+#image-box img {
+    max-width: 100%;
+    max-height: 100%; /* Allow height to fit the box */
+    width: auto;      /* Maintain aspect ratio */
+    height: auto;     /* Maintain aspect ratio */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* General styling for buttons */
+button {
+    background-color: #007bff;  /* Bright blue button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+    #info-section {
+        flex-direction: column;  /* Stack the boxes vertically */
+        padding: 15px;  /* Adjust padding */
+    }
+
+    #code-box, #image-box {
+        width: 100%;  /* Full width on mobile */
+    }
+
+    button {
+        width: 100%;  /* Make buttons full-width for easier tapping */
+        font-size: 1rem;
+    }
+}
