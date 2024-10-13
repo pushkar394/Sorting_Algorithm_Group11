@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="sorting.css">
+    <link rel="stylesheet" href="info.css">
+    <title>Sorting Visualizer</title>
+</head>
+<body>
+    <h1>Sorting Visualizer By Group 11</h1>
+    <div style="text-align: center;">
+        <button id="newarr" style="color:linear-gradient(145deg, #4CAF50, #388E3C);"><b>Generate New Array</b></button>
+    </div>
+    <div id="slider-container">
+        <div id="size-box">
+            <span style="font-size: large; color: rgb(255, 255, 255);">Size:</span>
+            <input id="sizer" type="range" min="20" max="100" step="1" value="60">
+        </div>
+        <div id="speed-box">
+            <span style="font-size: large; color: rgb(255, 255, 255);">Speed:</span>
+            <input type="range" id="speed" min="0" max="500" value="100" />
+        </div>
+    </div>
+    <div style="text-align: center;">
+        <button id="bubble"><b>Bubble Sort</b></button>
+        <button id="selection"><b>Selection Sort</b></button>
+        <button id="insertion"><b>Insertion Sort</b></button>
+        <button id="merge"><b>Merge Sort</b></button>
+        <button id="quick"><b>Quick Sort</b></button>
+    </div>
+    
+    <div id="bar"></div>
+
+    <div style="text-align: center;">
+      
+        <button id="stop-sorting"><b>Stop Sorting</b></button>
+    </div>
+
+
+    <!-- Section to display code and image after clicking the button -->
+    <div id="info-section">
+        <div id="code-box"></div>
+        <div id="image-box"></div>
+    </div>
+
+    <script src="scripts/sorting.js"></script>
+    <script src="scripts/bubble.js"></script>
+    <script src="scripts/selection.js"></script>
+    <script src="scripts/insertion.js"></script>
+    <script src="scripts/merge.js"></script>
+    <script src="scripts/quick.js"></script>
+   
+</body>
+</html>
