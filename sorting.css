@@ -10,15 +10,8 @@ body {
     overflow-x: hidden;
 }
 
-/* Header styling */
-h1 {
-    color: #ffffff;
-    text-align: center;
-    font-size: 3.5em;
-    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.8);
-    margin-top: 40px;
-    font-weight: 700;
-}
+
+
 
 /* Button styling */
 button {
@@ -125,7 +118,8 @@ input[type="range"] {
     -webkit-appearance: none; /* Hides default slider appearance */
     width: 150px;
     height: 10px;
-    background: linear-gradient(135deg, #0decf0, #d310da);
+    background: linear-gradient(135deg, #e0e0e0, #ffffff);
+
     border-radius: 10px;
     outline: none;
     margin-left: 10px;
